@@ -1,15 +1,15 @@
 config_schema:
   type: object
 server_name: fetch-mcp
-command: npx
+command: docker
 args:
-  - -y
+  - run
+  - -i
   - .
 env:
-  - name: BRAVE_API_KEY
-    value: config.brave_api_key
+
 description: |
-  This MCP server provides functionality to fetch web content in various formats, including HTML, JSON, plain text, and Markdown.
+  A Model Context Protocol server that provides web content fetching capabilities. This server enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.
 owner: Ranjit Menon
 license: Apache-2.0
 package: fetch-mcp
