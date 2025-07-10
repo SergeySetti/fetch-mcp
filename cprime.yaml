@@ -1,0 +1,16 @@
+config_schema:
+  type: object
+server_name: fetch-mcp
+command: npx
+args:
+  - -y
+  - .
+env:
+  - name: BRAVE_API_KEY
+    value: config.brave_api_key
+description: |
+  This MCP server provides functionality to fetch web content in various formats, including HTML, JSON, plain text, and Markdown.
+owner: Ranjit Menon
+license: Apache-2.0
+package: fetch-mcp
+vendor: Cprime
